@@ -18,14 +18,14 @@ h-main-body(
                       img(src='img/site/whatsapp.png' style='width: 24px')
                     .col-auto.h-pl-xs.text-white.text-body-1
                       | ORÇAMENTO
-              .row.justify-end.h-mt-sm
-                .col-auto.text-h6.text-white
-                  | Redes Sociais
-              .row.justify-end
-                h-btn(fab='' size='md' bg-color='bg-transparent')
-                  h-link(url='#' icon='fab fa-facebook-square' text-color='text-white')
-                h-btn(fab='' size='md' bg-color='bg-transparent')
-                  h-link(url='#' icon='fab fa-instagram-square' text-color='text-white')
+              //- .row.justify-end.h-mt-sm
+              //-   .col-auto.text-h6.text-white
+              //-     | Redes Sociais
+              //- .row.justify-end
+              //-   h-btn(fab='' size='md' bg-color='bg-transparent')
+              //-     h-link(url='#' icon='fab fa-facebook-square' text-color='text-white')
+              //-   h-btn(fab='' size='md' bg-color='bg-transparent')
+              //-     h-link(url='#' icon='fab fa-instagram-square' text-color='text-white')
     h-app-toolbar.gt-xs(bg-color="bg-primary")
       h-app-toolbar-container
         .col
@@ -40,14 +40,14 @@ h-main-body(
                       img(src='img/site/whatsapp.png' style='width: 24px')
                     .col-auto.h-pl-xs.text-white.text-body-1
                       | ORÇAMENTO
-              .row.justify-end.h-mt-sm
-                .col-auto.text-h6.text-white
-                  | Redes Sociais
-              .row.justify-end
-                h-btn(fab='' size='md' bg-color='bg-transparent')
-                  h-link(url='#' icon='fab fa-facebook-square' text-color='text-white' new-window)
-                h-btn(fab='' size='md' bg-color='bg-transparent')
-                  h-link(url='#' icon='fab fa-instagram-square' text-color='text-white' new-window)
+              //- .row.justify-end.h-mt-sm
+              //-   .col-auto.text-h6.text-white
+              //-     | Redes Sociais
+              //- .row.justify-end
+              //-   h-btn(fab='' size='md' bg-color='bg-transparent')
+              //-     h-link(url='#' icon='fab fa-facebook-square' text-color='text-white' new-window)
+              //-   h-btn(fab='' size='md' bg-color='bg-transparent')
+              //-     h-link(url='#' icon='fab fa-instagram-square' text-color='text-white' new-window)
       h-app-toolbar-container
         .col
           .row.menubar.align-items-center
@@ -62,7 +62,6 @@ h-main-body(
             .menuitem(@click="goToDiv('oquefazemos')") O QUE FAZEMOS
             .menuitem |
             .menuitem(@click="goToDiv('emuso')") EM AÇÃO
-  template(v-slot:footer)
 
   NavDrawerSite(ref="navHelp" v-model="showDrawer" side="left")
     .row.justify-end.align-items-center
@@ -104,7 +103,7 @@ h-main-body(
   h-page
     .div
       .row.justify-center
-        .col.mySlides.fade.mySlidesHeaders(
+        .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-7.col-xl-7.mySlides.fade.mySlidesHeaders(
           v-for="(img, index) in 4"
           :key="`header${index}`"
         )
@@ -153,7 +152,7 @@ h-main-body(
 
     .row.wrap.justify-center.h-pa-md
       .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-7.col-xl-7
-        img(src="img/site/cm1.png" style="width: 100%")
+        img(src="img/site/cm1.jpeg" style="width: 100%")
         p.text-center Os módulos fotovoltaicos captam a energia luminosa do sol e a transformam em energia elétrica.
 
     .row.wrap.justify-center.h-pa-md
@@ -168,71 +167,80 @@ h-main-body(
         .text-h5.text-center.text-bold VANTAGENS DE USAR
 
     .row.wrap.justify-center.h-pa-lg
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center ECONÔMICO
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/vant1.png" size="150px")
-        p.text-center Reduz em até 95% suas depesas com energia elétrica, além de trazer segurança no caso de aumentos na fatura e mais valorização ao seu imóvel.
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center BAIXA MANUTENÇÃO
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/vant2.png" size="150px")
-        p.text-center Os equipamentos possuem alta confiabilidade e baixa manutenção, além de garantia do fabricante que varia de 5 a 10 anos.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center ECONÔMICO
+        h-card-media
+          h-card-media-img(img="img/site/vant1.jpeg")
+        h-card-section.text-body1
+          | Reduz em até 95% suas depesas com energia elétrica, além de trazer segurança no caso de aumentos na fatura e mais valorização ao seu imóvel.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center BAIXA MANUTENÇÃO
+        h-card-media
+          h-card-media-img(img="img/site/vant2.jpeg")
+        h-card-section.text-body1
+          | Os equipamentos possuem alta confiabilidade e baixa manutenção, além de garantia do fabricante que varia de 5 a 10 anos.
 
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center SUSTENTÁVEL
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/vant3.png" size="150px")
-        p.text-center Fonte limpa e renovável de energia, que reduz a produção de gases poluentes e contribui para a melhoria da qualidade da energia elétrica.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center SUSTENTÁVEL
+        h-card-media
+          h-card-media-img(img="img/site/vant3.jpeg")
+        h-card-section.text-body1
+          | Fonte limpa e renovável de energia, que reduz a produção de gases poluentes e contribui para a melhoria da qualidade da energia elétrica.
 
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center ACESSÍVEL
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/vant4.png" size="150px")
-        p.text-center Altamente, a energia solar conta com facilidades de acesso e financiamento, além de rápido retorno do investimento, entre 5 e 10 anos.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center ACESSÍVEL
+        h-card-media
+          h-card-media-img(img="img/site/vant4.jpeg")
+        h-card-section.text-body1
+          | Altamente, a energia solar conta com facilidades de acesso e financiamento, além de rápido retorno do investimento, entre 5 e 10 anos.
 
     .row.justify-center(ref="oquefazemos")
       .col-auto.h-pa-md
         .text-h5.text-center.text-bold O QUE FAZEMOS
 
     .row.wrap.justify-center.h-pa-lg
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center ESTUDOS
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/onf1.png" size="150px")
-        p.text-center Avaliação da radiação solar, orientação e inclinação dos módulos fotovoltaicos, temperatura, sombreamento...
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center CÁLCULOS
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/onf2.png" size="150px")
-        p.text-center Dimensionamento do sistema, Orçamento, Viabilidade financeira, Aprovação de crédito e Previsão de geração
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center ESTUDOS
+        h-card-media
+          h-card-media-img(img="img/site/onf1.png")
+        h-card-section.text-body1.text-center
+          | Avaliação da radiação solar, orientação e inclinação dos módulos fotovoltaicos, temperatura, sombreamento...
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center CÁLCULOS
+        h-card-media
+          h-card-media-img(img="img/site/onf2.png")
+        h-card-section.text-body1.text-center
+          | Dimensionamento do sistema, Orçamento, Viabilidade financeira, Aprovação de crédito e Previsão de geração
 
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center PROJETO
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/onf3.png" size="150px")
-        p.text-center Projeto executivo, Emissao de ARTs e Tramitação junto à concessionária.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center PROJETO
+        h-card-media
+          h-card-media-img(img="img/site/onf3.png")
+        h-card-section.text-body1.text-center
+          | Fazemos todo o Projeto executivo para voce, Emissao de ARTs e Tramitação junto à concessionária.
 
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center INSTALAÇÃO
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/onf4.png" size="150px")
-        p.text-center Entrega dos equipamentos. Instalação, Solicitação de vistoria e substituição do medidor , só aguardando a aprovação da energia.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center INSTALAÇÃO
+        h-card-media
+          h-card-media-img(img="img/site/onf4.png")
+        h-card-section.text-body1.text-center
+          | Entrega dos equipamentos. Instalação, Solicitação de vistoria e substituição do medidor , só aguardando a aprovação da energia.
 
-      .no-shrink.col-mobile.col-xs-12.col-sm-3.col-md-2.col-lg-2.col-xl-2
-        .text-h6.text-center MANUTENÇÃO
-        .row.justify-center
-          .col-auto
-            h-image(avatar src="img/site/onf5.png" size="150px")
-        p.text-center Em raros casos será necessária (como descarga de um raio ou algum acidente mecânico), mas precisando estaremos à disposição.
+      h-card.h-mr-sm.h-mb-sm(style="width:250px;")
+        h-card-section
+          .text-h6.text-center MANUTENÇÃO
+        h-card-media
+          h-card-media-img(img="img/site/onf5.png")
+        h-card-section.text-body1.text-center
+          | Em raros casos será necessária (como descarga de um raio ou algum acidente mecânico), mas precisando estaremos à disposição.
 
     .row.justify-center(ref="emuso")
       .col-auto.h-pa-md
@@ -241,7 +249,7 @@ h-main-body(
     .div
       .row.justify-center
         .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-7.col-xl-7.mySlides.fade.mySlidesBoards(
-          v-for="(img, index) in 3"
+          v-for="(img, index) in 6"
           :key="`board${index}`"
         )
           img(
@@ -252,9 +260,16 @@ h-main-body(
       .col-auto
         .h-mt-md(style="text-align:center")
           span.dot.dotBoards(
-            v-for="(img, index) in 3"
+            v-for="(img, index) in 6"
             :key="`board${index}`"
           )
+
+    .row.bg-primary.align-items-center.wrap.justify-center.h-pa-lg
+      .col-auto
+        img(src='img/site/logo3jxsolar.png' style='width: 200px')
+      .col.text-white.text-center
+        | Avenida General Melo, 360 - Bairro Dom Aquino- Cuiabá-MT - Cep 78.015-300
+
 </template>
 
 <script>
