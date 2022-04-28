@@ -11,11 +11,18 @@ h-main-body(
             .col-auto.text-h5.text-white
               | 3JXSOLAR
             .col.h-pa-md
-              .row.justify-end.align-items-center
-                .border.border-radius.border-positive.bg-positive.h-pa-xs
+              .row.justify-end
+                .col-auto
+                  img(src='img/site/whatsapp.png' style='width: 16px')
+                .col-auto.text-white.h-pl-xs
+                  | (65) 99359-7771
+              .row.justify-end.align-items-center.h-mt-sm
+                .cursor-pointer.border.border-radius.border-positive.bg-positive.h-pa-xs(
+                  @click="openUrl('https://api.whatsapp.com/send?phone=5565993597771&text=Oi.%20Tudo%20bem%3F%20Eu%20gostaria%20de%20um%20or%C3%A7amento%20e%2Fou%20suporte.')"
+                )
                   .row.justify-end.align-items-center
                     .col-auto
-                      img(src='img/site/whatsapp.png' style='width: 24px')
+                      img(src='img/site/whatsapp.png' style='width: 16px')
                     .col-auto.h-pl-xs.text-white.text-body-1
                       | ORÇAMENTO
               //- .row.justify-end.h-mt-sm
@@ -33,8 +40,15 @@ h-main-body(
             .col-auto
               img(src='img/site/logo3jxsolar.png' style='width: 200px')
             .col.h-pa-md
-              .row.justify-end.align-items-center
-                .border.border-radius.border-positive.bg-positive.h-pa-xs
+              .row.justify-end
+                .col-auto
+                  img(src='img/site/whatsapp.png' style='width: 24px')
+                .col-auto.text-white.h-pl-xs
+                  | (65) 99359-7771
+              .row.justify-end.align-items-center.h-mt-sm
+                .cursor-pointer.border.border-radius.border-positive.bg-positive.h-pa-xs(
+                  @click="openUrl('https://api.whatsapp.com/send?phone=5565993597771&text=Oi.%20Tudo%20bem%3F%20Eu%20gostaria%20de%20um%20or%C3%A7amento%20e%2Fou%20suporte.')"
+                )
                   .row.justify-end.align-items-center
                     .col-auto
                       img(src='img/site/whatsapp.png' style='width: 24px')
@@ -264,11 +278,27 @@ h-main-body(
             :key="`board${index}`"
           )
 
-    .row.bg-primary.align-items-center.wrap.justify-center.h-pa-lg
-      .col-auto
-        img(src='img/site/logo3jxsolar.png' style='width: 200px')
-      .col.text-white.text-center
-        | Avenida General Melo, 360 - Bairro Dom Aquino- Cuiabá-MT - Cep 78.015-300
+    .bg-primary
+      .row.justify-around
+        .col-auto
+          img(src='img/site/logo3jxsolar.png' style='width: 120px')
+        .col.h-pa-xs
+          .row
+            .col.text-white.text-center.h-pa-xs(style="width: 170px")
+              .text-caption Avenida General Melo, 360 <br>
+              .text-caption Bairro Dom Aquino- Cuiabá-MT <br>
+              .text-caption Cep 78.015-300
+            .col-auto
+              .row.justify-center
+                .col-auto
+                  img(src='img/site/whatsapp.png' style='width: 16px')
+                .col-auto.text-white.h-pl-xs
+                  .text-caption (65) 99359-7771
+              .row.justify-center
+                .col-auto
+                  img(src='img/site/whatsapp.png' style='width: 16px')
+                .col-auto.text-white.h-pl-xs
+                  .text-caption (65) 3615-4200
 
 </template>
 
@@ -293,6 +323,9 @@ export default {
     this.showSlidesBoards();
   },
   methods: {
+    openUrl(url) {
+      window.open(url);
+    },
     closeDrawer() {
       this.showDrawer = !this.showDrawer;
     },
