@@ -65,8 +65,6 @@ h-main-body(
       h-app-toolbar-container
         .col
           .row.menubar.align-items-center
-            .menuitem(@click="goToDiv('sobreaempresa')") SOBRE
-            .menuitem |
             .menuitem(@click="goToDiv('quemsomos')") QUEM SOMOS
             .menuitem |
             .menuitem(@click="goToDiv('comofunciona')") COMO FUNCIONA
@@ -91,10 +89,6 @@ h-main-body(
         img(src='img/site/logo3jxsolar.png' style='width: 130px')
 
     h-list
-      h-list-item(@click="closeDrawer(); goToDiv('sobreaempresa')")
-        h-list-item-content
-          h-list-item-text(title="SOBRE")
-
       h-list-item(@click="closeDrawer(); goToDiv('quemsomos')")
         h-list-item-content
           h-list-item-text(title="QUEM SOMOS")
@@ -133,41 +127,122 @@ h-main-body(
             :key="`header${index}`"
           )
 
-    .row.justify-center.h-pa-md(ref="sobreaempresa")
-      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-5.col-xl-5
-        .text-h5.text-center SOBRE A EMPRESA
+    .row.wrap.justify-center.align-items-center.h-pa-lg(ref="quemsomos")
+      .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
+        img(src="img/site/quemsomos.png" style="width: 100%")
+      .col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-5.col-xl-5.h-pa-md.text-primary
+        .text-h5.text-center.text-bold QUEM SOMOS
+        .text-body1.text-center.h-mt-xl A 3JX Solar hoje é uma empresa especializada em implantação de sistemas de geração de energia renovável (solar).
+        .text-body1.text-center O foco da empresa é oferecer uma solução completa, para que nossos clientes possam reduzir custos gerando sua própria energia.
+        .text-body1.text-center.h-mt-md Será realizado o projeto por inteiro, desde o dimensionamento, assessoria junto à concessionária e a instalação completa do sistema fotovoltaico.
 
-        p.text-justify A 3jxSolarmt se especializou no seguimento fotovoltaico e oferece soluções completas e confiáveis a cada um de seus clientes.
+    .row.wrap.justify-center.h-pa-lg.text-primary
+      .col
+        .text-h5.text-center.text-bold Nossa Atuação
+        .row.justify-center
+          .col-auto
+            .text-body1.text-center.h-mt-xl(style="max-width: 500px") Nós da 3JX Solar atuamos no projeto e instalação de sistemas solares em residências, empresas e condomínios em geral.
+    .row.wrap.justify-center.text-primary
+      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-7.col-xl-8.text-center
+        img(src="img/site/nossamissao.png" style="width: 100%")
 
-        p.text-justify Atua na Comercialização dos produtos de alta tecnologia e Confiabilidade, na Engenharia das soluções, na Execução de projetos, na Manutenção Preventiva, oferece suporte técnico aos nossos clientes e disponibilizamos um Pós-venda diferenciado.
+    .text-h5.text-center.text-center.text-bold.h-pa-lg.text-primary Porque contratar a 3JX Solar?
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 1.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Suporte avançado do início ao fim do projeto, para nossos clientes conseguirem obter o máximo de economia e rentabilidade.
 
-    .row.justify-center(ref="quemsomos")
-      .col-auto.h-pa-md
-        .text-h5 QUEM SOMOS
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 2.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.wrap.justify-center.h-pa-md
-      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-5.col-xl-5
-        p.text-justify Mudamos de ramo de atividade em 2018 e a 3jxsolarmt com o desejo de ter um impacto positivo no uso dos recursos naturais, oferecendo serviços especializados, utilizando produtos confiáveis e de altíssima qualidade.
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 3.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-        p.text-justify Para isso, contamos com uma equipe especializada e multidisciplinar para auxiliar os clientes com os mais diversos projetos, na área de energia solar. Somos uma empresa dedicada à sustentabilidade, inovação, excelência e aos mais altos padrões de atendimento ao cliente.
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 4.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-        .text-h6.text-center MISSÃO
-        p.text-justify Tratando cada projeto de forma especial, nosso compromisso é entregar aos nossos clientes o melhor custo benefício disponível atualmente, sempre prezando pela qualidade em primeiro lugar.
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 5.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Temos parcerias com as melhores instituições financeiras, conseguindo assim financiamentos com melhores taxas do mercado. Também possuímos estratégias diferenciadas, para que a economia de energia seja equivalente a parcela paga, evitando que o cliente tenha dois custos (parcela + conta de energia).
 
-        .text-h6.text-center VISÃO
-        p.text-justify Nossa visão baseia-se em nossa experiência, para trazer a tecnologia solar para outro nível, tornando mais fácil, mais simples e ainda mais econômico incorporá-la em nossa vida cotidiana.
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 6.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Além do sistema fotovoltaico trazer economia direta na sua conta de energia pode valorizar e muito seu imóvel.
 
-        .text-h6.text-center VALORES
-        p.text-justify Como uma família e um negócio de propriedade local, nossos valores fundamentais sempre buscam a qualidade do serviço e a liderança inovadora.
+    .row.justify-center.align-items-center.h-mt-md.text-primary
+      .col-auto.text-h2
+        | 7.
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+        | Dispomos de instalacoes personalizadas, onde podemos instalar para o cliente um sistema menor e posteriormente, após constatado o custo-benefício, ampliamos o sistema instalado, tudo dentro das condições do cliente.
+
+    .row.wrap.justify-center.h-pa-lg.text-primary
+      .col-auto.text-h5.text-center.text-bold Produtos
+
+    .row.wrap.justify-center.h-pa-lg
+      h-card.h-mr-sm.h-mb-sm.prodcard
+        h-card-section(auto)
+          .text-h6.text-center Painel Solar
+        h-card-media
+          h-card-media-img(img="img/site/prodpainelsolar.png")
+        h-card-section.text-body1
+          | O painel solar fotovoltaico é um dispositivo responsável por captar a radiação solar e converter em energia elétrica.
+      h-card.h-mr-sm.h-mb-sm.prodcard
+        h-card-section(auto)
+          .text-h6.text-center Inversor
+        h-card-media
+          h-card-media-img(img="img/site/prodinversor.png")
+        h-card-section.text-body1
+          | Transforma a corrente elétrica alternada fixa (corrente e tensão) em corrente elétrica CA variável, controlando assim a potência consumida pela carga através da variação da frequência entregue pela rede.
+      h-card.h-mr-sm.h-mb-sm.prodcard
+        h-card-section(auto)
+          .text-h6.text-center Controlador de Carga
+        h-card-media
+          h-card-media-img(img="img/site/prodcontrolador.png")
+        h-card-section.text-body1
+          | Ele é o equipamento responsável por preservar a vida útil das baterias, protegendo-as dos efeitos da sobrecarga ou descarga abrupta.
+      h-card.h-mr-sm.h-mb-sm.prodcard
+        h-card-section(auto)
+          .text-h6.text-center Bateria
+        h-card-media
+          h-card-media-img(img="img/site/prodbateria.png")
+        h-card-section.text-body1
+          | É o equipamento que armazena energia, permitindo que seu usuário tenha mais autonomia para desconectar-se da rede elétrica e não precisar mais se preocupar com falta de energia e aumentos na conta de luz.
+      h-card.h-mr-sm.h-mb-sm.prodcard
+        h-card-section(auto)
+          .text-h6.text-center Estrutura de Montagem
+        h-card-media
+          h-card-media-img(img="img/site/prodestrutura.png")
+        h-card-section.text-body1
+          | Coberturas de telha de barro, telha de concreto, telhado metálico, telha de fibrocimento, seguidores solares e fixação direta sobre o solo.
 
     .row.justify-center(ref="comofunciona")
-      .col-auto.h-pa-md
+      .col-auto.h-pa-lg
         .text-h5.text-center.text-bold COMO FUNCIONA
 
-    .row.wrap.justify-center.h-pa-md
-      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-7.col-xl-7
+    .row.wrap.justify-center
+      .col.h-pa-lg
+        | Desde 17 de abril de 2012, quando entrou em vigor a Resolução Normativa ANEEL n. 482/2012, o consumidor brasileiro pode gerar sua própria energia elétrica a partir de fontes renováveis e inclusive fornecer o excedente para a rede de distribuição de sua localidade.
+
+    .row.wrap.justify-center.align-items-center.h-pa-md
+      .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
         img(src="img/site/cm1.jpeg" style="width: 100%")
-        p.text-center Os módulos fotovoltaicos captam a energia luminosa do sol e a transformam em energia elétrica.
+      .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
+        .text-body1.text-center.h-pa-md
+          | Este tipo de energia proveniente do sol é captada através de recursos materiais, como por exemplo os painéis solares extremamente populares nos dias de hoje, que sao formados através de celulas fotovoltaicas que tê,m como principal objetivo a transformação de energia solar em energia elétrica, térmica ou mecânica. Esta energia pode ser utilizada para diversos fins, seja o título particular ou até mesmo empresarial.
 
     .row.wrap.justify-center.h-pa-md
       .col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-7.col-xl-7
@@ -175,6 +250,67 @@ h-main-body(
           <source src="video/psvideo1.mp4" type="video/mp4">
           Your browser does not support HTML video.
         </video>
+
+    .bg-primary
+      .row.wrap.justify-center
+        .col-auto.h-pa-lg.text-white
+          .text-h5.text-center.text-bold BENEFÍCIOS
+
+      .row.wrap.justify-center.align-items-center.h-pa-lg
+        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+          | Economia:
+        .col.text-white
+          | Depois de instalado corretamente, o sistema fotovoltaico pode gerar 100% da energia que você consome, tendo uma economia de até 95% da sua conta de luz. Além de ser possível a utilização do excedente de energia em outra residência ou escritório por exemplo.
+
+      .row.wrap.justify-center.align-items-center.h-pa-lg
+        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+          | Valorização do seu imóvel:
+        .col.text-white.h-pa-sm
+          | Além de trazer economia direto na sua conta de energia, um sistema solar fotovoltaico pode valorizar e muito seu imóvel, acelerando o retorno de seu investimento.
+
+      .row.wrap.justify-center.align-items-center.h-pa-lg
+        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+          |  Linha de Crédito Especial:
+        .col.text-white
+          | Os grandes bancos brasileiros já criaram linhas de crédito especialmente para geradores fotovoltaicos, tanto para pessoa física quanto para pessoa jurídica. Dessa maneira a energia solar está cada vez mais acessível a todos.
+
+      .row.wrap.justify-center.align-items-center.h-pa-lg
+        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+          | Sustentabilidade:
+        .col.text-white
+          | Trata-se de uma fonte totalmente limpa, renovável e com disponibilidade infinita (o sol). Sua produção não emite qualquer tipo de poluição ou gases de efeito estufa, garantindo o compromisso do país na diminuição de CO2.
+
+    .row.wrap.justify-center
+      .col-auto.h-pa-lg.text-h5.text-center.text-bold.text-primary
+        | 3JX Energia solar O Brasil tem um dos maiores índices de radiação solar do mundo
+
+    .row.wrap.justify-center
+      .col-auto.text-body1.h-pa-lg.text-primary
+        | No País, a média fica entre 4.500 Wh/m2 e 6.300 Wh/m2, de acordo com dados do Atlas Brasileiro de Energia Solar. Para se ter uma ideia, a Alemanha, que é o país que mais explora a energia fotovoltaica em todo o mundo, recebe aproximadamente 40% menos luz solar em sua região de maior potencial, em comparação com a incidência brasileira. Mesmo assim, a energia solar ainda é pouco aproveitada no Brasil (porém em exponencial crescimento), correspondendo a pouco mais de 0,02% da nossa matriz energética.
+
+    .row.wrap.justify-center
+      .col-auto.h-pa-lg.text-h5.text-center.text-bold POTENCIAL ENERGÉTICO
+
+    .row.wrap.justify-center.align-items-center.h-pa-md
+      .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
+        img(src="img/site/tabelapotencial.png" style="width: 100%")
+      .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
+        .text-body1.text-center.h-pa-md
+          | O cálculo de produção de energia baseia-se na irradiação e pode ter alterações de cidade para cidade. Fatores como inclinação dos painéis fotovoltáicos, direção/inclinação do telhado e sombra direta influenciam na produção do gerador. (Nos procure para fazer a instalação)
+
+    .row.wrap.justify-center
+      .col-auto.h-pa-lg.text-h5.text-center.text-bold LEGISLAÇÃO
+
+    .row.wrap.justify-center
+      .col-auto.text-body1.h-pa-lg
+        | No ano de 2013, foi proposto um projeto de lei no Senado nacional que sugeria a isenção de componentes necessários para a instalação de geração elétrica a partir de energia solar. A proposta, aprovada em 2015, garante que a instalação de novas plantas de geração e micro geração sejam adquiridas com a isenção de diversos impostos, assim como a isenção na conta de luz que utilize a geração solar.
+    .row.wrap.justify-center
+      .col-auto.text-body1.h-pa-lg
+        | Entre os maiores incentivos à energia solar no Brasil está a regulamentação sobre a microgeração residencial, estabelecida pela Agência Nacional de Energia Elétrica (ANEEL ) em 2012. Esta regulamentação permite que qualquer residência possua painéis solares que possam ser utilizados como forma de geração autônoma de energia. Isso não apenas reduz o consumo de energia obtido através da distribuidora, mas em horários de pico de produção energética ainda pode devolver energia rede de distribuição.
+
+    .row.wrap.justify-center
+      .col-auto.text-body1.h-pa-lg
+        | Este processo de "devolução" é o que gera os chamados créditos de energia , que são créditos energéticos gerados para a residência que produziu mais energia do que consumiu durante um período. Estes créditos são descontados em momentos onde o consumo é maior do que a produção. A economia é útil tanto para o consumidor , que diminui sua conta , quanto para o Estado , que recebe menos demanda de fontes de energia mais poluentes que , em períodos de baixa nos reservatórios de hidrelétricas , costumam ser baseadas na queima de combustíveis fósseis , como carvão mineral e gás natural.
 
     .row.justify-center(ref="vantagens")
       .col-auto.h-pa-md
@@ -278,27 +414,48 @@ h-main-body(
             :key="`board${index}`"
           )
 
-    .bg-primary
-      .row.justify-around
-        .col-auto
-          img(src='img/site/logo3jxsolar.png' style='width: 120px')
-        .col.h-pa-xs
-          .row
-            .col.text-white.text-center.h-pa-xs(style="width: 170px")
-              .text-caption Avenida General Melo, 360 <br>
-              .text-caption Bairro Dom Aquino- Cuiabá-MT <br>
-              .text-caption Cep 78.015-300
-            .col-auto
-              .row.justify-center
-                .col-auto
-                  img(src='img/site/whatsapp.png' style='width: 16px')
-                .col-auto.text-white.h-pl-xs
-                  .text-caption (65) 99359-7771
-              .row.justify-center
-                .col-auto
-                  img(src='img/site/whatsapp.png' style='width: 16px')
-                .col-auto.text-white.h-pl-xs
-                  .text-caption (65) 3615-4200
+    .row.justify-center(ref="emuso")
+      .col-auto.h-pa-md
+        .text-h5.text-center.text-bold FALE CONOSCO
+
+    .row.wrap.justify-center.align-items-center.h-pa-md
+      .h-pa-sm.col-mobile.col-xs-12.col-sm-12.col-md-4.col-lg-4.col-xl-5
+        .text-h5 3JX SOLAR
+        .text-body1 Energia Renovável
+
+        .text-h6.h-mt-md Av. General Mello, 360
+        .text-h6 Bairro Dom Aquino - Cuiabá/MT
+        .text-h6 CEP: 78015-300
+
+        .text-h6.h-mt-md Tel: (65) 3615 4200
+        .text-h6 (65) 9 9201 6532
+        .text-body1 (Ligações e WhatsApp)
+        .text-h6 Email: jackson3jx@hotmail.com
+
+      .col-mobile.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-5
+        img(src="img/site/mapalocalizacao.png" style="width: 100%")
+
+    //- .bg-primary
+    //-   .row.justify-around
+    //-     .col-auto
+    //-       img(src='img/site/logo3jxsolar.png' style='width: 120px')
+    //-     .col.h-pa-xs
+    //-       .row
+    //-         .col.text-white.text-center.h-pa-xs(style="width: 170px")
+    //-           .text-caption Avenida General Mello, 360 <br>
+    //-           .text-caption Bairro Dom Aquino- Cuiabá-MT <br>
+    //-           .text-caption Cep 78.015-300
+    //-         .col-auto
+    //-           .row.justify-center
+    //-             .col-auto
+    //-               img(src='img/site/whatsapp.png' style='width: 16px')
+    //-             .col-auto.text-white.h-pl-xs
+    //-               .text-caption (65) 99359-7771
+    //-           .row.justify-center
+    //-             .col-auto
+    //-               img(src='img/site/whatsapp.png' style='width: 16px')
+    //-             .col-auto.text-white.h-pl-xs
+    //-               .text-caption (65) 3615-4200
 
 </template>
 
@@ -451,6 +608,11 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.prodcard {
+  width:250px;
+  height:420px
 }
 
 /*END  Slideshow COMPONENT */
