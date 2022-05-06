@@ -130,67 +130,75 @@ h-main-body(
     .row.wrap.justify-center.align-items-center.h-pa-lg(ref="quemsomos")
       .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
         img(src="img/site/quemsomos.png" style="width: 100%")
-      .col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-5.col-xl-5.h-pa-md.text-primary
-        .text-h5.text-center.text-bold QUEM SOMOS
+      .col-mobile.col-xs-12.col-sm-8.col-md-7.col-lg-5.col-xl-5.h-pa-md
+        .text-h5.title QUEM SOMOS
         .text-body1.text-center.h-mt-xl A 3JX Solar hoje é uma empresa especializada em implantação de sistemas de geração de energia renovável (solar).
         .text-body1.text-center O foco da empresa é oferecer uma solução completa, para que nossos clientes possam reduzir custos gerando sua própria energia.
         .text-body1.text-center.h-mt-md Será realizado o projeto por inteiro, desde o dimensionamento, assessoria junto à concessionária e a instalação completa do sistema fotovoltaico.
 
-    .row.wrap.justify-center.h-pa-lg.text-primary
+    .row.wrap.justify-center.h-pa-lg
       .col
-        .text-h5.text-center.text-bold Nossa Atuação
+        .text-h5.title NOSSA ATUAÇÃO
         .row.justify-center
           .col-auto
             .text-body1.text-center.h-mt-xl(style="max-width: 500px") Nós da 3JX Solar atuamos no projeto e instalação de sistemas solares em residências, empresas e condomínios em geral.
-    .row.wrap.justify-center.text-primary
-      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-7.col-xl-8.text-center
-        img(src="img/site/nossamissao.png" style="width: 100%")
 
-    .text-h5.text-center.text-center.text-bold.h-pa-lg.text-primary Porque contratar a 3JX Solar?
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    //- .lt-xs
+    .row.wrap.justify-center
+      .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-7.col-xl-8.text-center
+        img(src="img/site/nossaatuacaocelular.png" style="width: 70%")
+
+    //- .gt-xs
+    //-   .row.wrap.justify-center
+    //-     .no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-7.col-xl-8.text-center
+    //-       .text-h5 DESKTOP
+    //-       img(src="img/site/nossaatuacaodesktop.png" style="width: 100%")
+
+    .text-h5.title.h-pa-lg PORQUE CONTRATAR A 3JX SOLAR?
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 1.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Suporte avançado do início ao fim do projeto, para nossos clientes conseguirem obter o máximo de economia e rentabilidade.
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 2.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 3.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 4.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 5.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Temos parcerias com as melhores instituições financeiras, conseguindo assim financiamentos com melhores taxas do mercado. Também possuímos estratégias diferenciadas, para que a economia de energia seja equivalente a parcela paga, evitando que o cliente tenha dois custos (parcela + conta de energia).
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 6.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Além do sistema fotovoltaico trazer economia direta na sua conta de energia pode valorizar e muito seu imóvel.
 
-    .row.justify-center.align-items-center.h-mt-md.text-primary
+    .row.justify-center.align-items-center.h-mt-md
       .col-auto.text-h2
         | 7.
       .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
         | Dispomos de instalacoes personalizadas, onde podemos instalar para o cliente um sistema menor e posteriormente, após constatado o custo-benefício, ampliamos o sistema instalado, tudo dentro das condições do cliente.
 
-    .row.wrap.justify-center.h-pa-lg.text-primary
-      .col-auto.text-h5.text-center.text-bold Produtos
+    .row.wrap.justify-center.h-pa-lg
+      .col-auto.text-h5.title PRODUTOS
 
     .row.wrap.justify-center.h-pa-lg
       h-card.h-mr-sm.h-mb-sm.prodcard
@@ -231,7 +239,7 @@ h-main-body(
 
     .row.justify-center(ref="comofunciona")
       .col-auto.h-pa-lg
-        .text-h5.text-center.text-bold COMO FUNCIONA
+        .text-h5.title COMO FUNCIONA
 
     .row.wrap.justify-center
       .col.h-pa-lg
@@ -281,15 +289,15 @@ h-main-body(
           | Trata-se de uma fonte totalmente limpa, renovável e com disponibilidade infinita (o sol). Sua produção não emite qualquer tipo de poluição ou gases de efeito estufa, garantindo o compromisso do país na diminuição de CO2.
 
     .row.wrap.justify-center
-      .col-auto.h-pa-lg.text-h5.text-center.text-bold.text-primary
+      .col-auto.h-pa-lg.text-h5.title
         | 3JX Energia solar O Brasil tem um dos maiores índices de radiação solar do mundo
 
     .row.wrap.justify-center
-      .col-auto.text-body1.h-pa-lg.text-primary
+      .col-auto.text-body1.h-pa-lg
         | No País, a média fica entre 4.500 Wh/m2 e 6.300 Wh/m2, de acordo com dados do Atlas Brasileiro de Energia Solar. Para se ter uma ideia, a Alemanha, que é o país que mais explora a energia fotovoltaica em todo o mundo, recebe aproximadamente 40% menos luz solar em sua região de maior potencial, em comparação com a incidência brasileira. Mesmo assim, a energia solar ainda é pouco aproveitada no Brasil (porém em exponencial crescimento), correspondendo a pouco mais de 0,02% da nossa matriz energética.
 
     .row.wrap.justify-center
-      .col-auto.h-pa-lg.text-h5.text-center.text-bold POTENCIAL ENERGÉTICO
+      .col-auto.h-pa-lg.text-h5.title POTENCIAL ENERGÉTICO
 
     .row.wrap.justify-center.align-items-center.h-pa-md
       .col-mobile.col-xs-12.col-sm-8.col-md-5.col-lg-4.col-xl-5
@@ -299,7 +307,7 @@ h-main-body(
           | O cálculo de produção de energia baseia-se na irradiação e pode ter alterações de cidade para cidade. Fatores como inclinação dos painéis fotovoltáicos, direção/inclinação do telhado e sombra direta influenciam na produção do gerador. (Nos procure para fazer a instalação)
 
     .row.wrap.justify-center
-      .col-auto.h-pa-lg.text-h5.text-center.text-bold LEGISLAÇÃO
+      .col-auto.h-pa-lg.text-h5.title LEGISLAÇÃO
 
     .row.wrap.justify-center
       .col-auto.text-body1.h-pa-lg
@@ -314,7 +322,7 @@ h-main-body(
 
     .row.justify-center(ref="vantagens")
       .col-auto.h-pa-md
-        .text-h5.text-center.text-bold VANTAGENS DE USAR
+        .text-h5.title VANTAGENS DE USAR
 
     .row.wrap.justify-center.h-pa-lg
       h-card.h-mr-sm.h-mb-sm(style="width:250px;")
@@ -350,7 +358,7 @@ h-main-body(
 
     .row.justify-center(ref="oquefazemos")
       .col-auto.h-pa-md
-        .text-h5.text-center.text-bold O QUE FAZEMOS
+        .text-h5.title O QUE FAZEMOS
 
     .row.wrap.justify-center.h-pa-lg
       h-card.h-mr-sm.h-mb-sm(style="width:250px;")
@@ -394,7 +402,7 @@ h-main-body(
 
     .row.justify-center(ref="emuso")
       .col-auto.h-pa-md
-        .text-h5.text-center.text-bold PAINÉIS EM AÇÃO
+        .text-h5.title PAINÉIS EM AÇÃO
 
     .div
       .row.justify-center
@@ -416,7 +424,7 @@ h-main-body(
 
     .row.justify-center(ref="emuso")
       .col-auto.h-pa-md
-        .text-h5.text-center.text-bold FALE CONOSCO
+        .text-h5.title FALE CONOSCO
 
     .row.wrap.justify-center.align-items-center.h-pa-md
       .h-pa-sm.col-mobile.col-xs-12.col-sm-12.col-md-4.col-lg-4.col-xl-5
@@ -613,6 +621,13 @@ img {vertical-align: middle;}
 .prodcard {
   width:250px;
   height:420px
+}
+
+.title {
+  opacity2: 0.5;
+  color: dodgerblue;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*END  Slideshow COMPONENT */
