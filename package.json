@@ -1,7 +1,7 @@
 {
   "name": "3jxsolar",
   "version": "0.1.6",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
