@@ -9,7 +9,7 @@ h-main-body(
             .col-auto
               h-app-toolbar-navigation(text-color='text-white' @click="showDrawer = !showDrawer")
             .col-auto.text-h5.text-white
-              | 3JXSOLAR
+              img(src='img/site/logo3jxsolar.png' style='width: 200px')
             .col.h-pa-md
               .row.justify-end
                 .col-auto
@@ -74,6 +74,8 @@ h-main-body(
             .menuitem(@click="goToDiv('oquefazemos')") O QUE FAZEMOS
             .menuitem |
             .menuitem(@click="goToDiv('emuso')") EM AÇÃO
+            .menuitem |
+            .menuitem(@click="goToDiv('faleconosco')") FALE CONOSO
 
   NavDrawerSite(ref="navHelp" v-model="showDrawer" side="left")
     .row.justify-end.align-items-center
@@ -108,6 +110,10 @@ h-main-body(
       h-list-item(@click="closeDrawer(); goToDiv('emuso')")
         h-list-item-content
           h-list-item-text(title="EM AÇÃO")
+
+      h-list-item(@click="closeDrawer(); goToDiv('faleconosco')")
+        h-list-item-content
+          h-list-item-text(title="FALE CONOSCO")
   h-page
     .div
       .row.justify-center
@@ -155,46 +161,46 @@ h-main-body(
     //-       img(src="img/site/nossaatuacaodesktop.png" style="width: 100%")
 
     .text-h5.title.h-pa-lg PORQUE CONTRATAR A 3JX SOLAR?
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 1.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Suporte avançado do início ao fim do projeto, para nossos clientes conseguirem obter o máximo de economia e rentabilidade.
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 2.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 3.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 4.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Trabalhamos somente com os melhores fabricante e produtos do mercado, garantindo assim alta qualidade e total confiança.
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 5.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Temos parcerias com as melhores instituições financeiras, conseguindo assim financiamentos com melhores taxas do mercado. Também possuímos estratégias diferenciadas, para que a economia de energia seja equivalente a parcela paga, evitando que o cliente tenha dois custos (parcela + conta de energia).
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 6.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Além do sistema fotovoltaico trazer economia direta na sua conta de energia pode valorizar e muito seu imóvel.
 
-    .row.justify-center.align-items-center.h-mt-md
+    .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify
       .col-auto.text-h2
         | 7.
-      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h5(style="max-width: 1200px")
+      .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
         | Dispomos de instalacoes personalizadas, onde podemos instalar para o cliente um sistema menor e posteriormente, após constatado o custo-benefício, ampliamos o sistema instalado, tudo dentro das condições do cliente.
 
     .row.wrap.justify-center.h-pa-lg
@@ -264,28 +270,29 @@ h-main-body(
         .col-auto.h-pa-lg.text-white
           .text-h5.text-center.text-bold BENEFÍCIOS
 
-      .row.wrap.justify-center.align-items-center.h-pa-lg
-        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+      //- .row.wrap.justify-center.align-items-center.h-pa-lg
+      .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify.text-white
+        .text-bold.text-white.h-mb-sm.col-auto.text-bold.text-center.text-h6(style="width:210px")
           | Economia:
-        .col.text-white
+        .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
           | Depois de instalado corretamente, o sistema fotovoltaico pode gerar 100% da energia que você consome, tendo uma economia de até 95% da sua conta de luz. Além de ser possível a utilização do excedente de energia em outra residência ou escritório por exemplo.
 
-      .row.wrap.justify-center.align-items-center.h-pa-lg
-        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+      .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify.text-white
+        .h-mb-sm.col-auto.text-bold.text-center.text-h6(style="width:210px")
           | Valorização do seu imóvel:
-        .col.text-white.h-pa-sm
+        .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
           | Além de trazer economia direto na sua conta de energia, um sistema solar fotovoltaico pode valorizar e muito seu imóvel, acelerando o retorno de seu investimento.
 
-      .row.wrap.justify-center.align-items-center.h-pa-lg
-        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+      .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify.text-white
+        .h-mb-sm.col-auto.text-bold.text-center.text-h6(style="width:210px")
           |  Linha de Crédito Especial:
-        .col.text-white
+        .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
           | Os grandes bancos brasileiros já criaram linhas de crédito especialmente para geradores fotovoltaicos, tanto para pessoa física quanto para pessoa jurídica. Dessa maneira a energia solar está cada vez mais acessível a todos.
 
-      .row.wrap.justify-center.align-items-center.h-pa-lg
-        .col-auto.text-bold.text-white.text-center.text-h6(style="width:210px")
+      .h-pa-sm.row.wrap.justify-center.align-items-center.h-mt-md.text-justify.text-white
+        .h-mb-sm.col-auto.text-bold.text-center.text-h6(style="width:210px")
           | Sustentabilidade:
-        .col.text-white
+        .h-pl-sm.no-shrink.col-mobile.col-xs-12.col-sm-8.col-md-8.col-lg-6.col-xl-5.text-h6(style="max-width: 1200px")
           | Trata-se de uma fonte totalmente limpa, renovável e com disponibilidade infinita (o sol). Sua produção não emite qualquer tipo de poluição ou gases de efeito estufa, garantindo o compromisso do país na diminuição de CO2.
 
     .row.wrap.justify-center
@@ -422,12 +429,12 @@ h-main-body(
             :key="`board${index}`"
           )
 
-    .row.justify-center(ref="emuso")
+    .row.justify-center(ref="faleconosco")
       .col-auto.h-pa-md
         .text-h5.title FALE CONOSCO
 
     .row.wrap.justify-center.align-items-center.h-pa-md
-      .h-pa-sm.col-mobile.col-xs-12.col-sm-12.col-md-4.col-lg-4.col-xl-5
+      .h-mb-sm.col-mobile.col-xs-12.col-sm-10.col-md-4.col-lg-4.col-xl-5
         .text-h5 3JX SOLAR
         .text-body1 Energia Renovável
 
@@ -440,7 +447,7 @@ h-main-body(
         .text-body1 (Ligações e WhatsApp)
         .text-h6 Email: jackson3jx@hotmail.com
 
-      .col-mobile.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-xl-5
+      .col-mobile.col-xs-12.col-sm-10.col-md-6.col-lg-6.col-xl-5
         img(src="img/site/mapalocalizacao.png" style="width: 100%")
 
     //- .bg-primary
